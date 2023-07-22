@@ -13,7 +13,7 @@
     }
   ],
   "env": {
-    "GITHUB_TOKEN": "@github_token" 
+    "GITHUB_TOKEN": "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" 
   },
   "github": {
     "silent": true,

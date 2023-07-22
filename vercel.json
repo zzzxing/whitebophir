@@ -1,10 +1,22 @@
 {
-   "version": 2,
-   "name": "music-album",
-   "builds": [
-      { "src": "app.js", "use": "@vercel/node" }
-   ],
-   "routes": [
-      { "src": "/(.*)", "dest": "/app.js" }
-   ]
+  "name": "my-nodejs-project",
+  "builds": [
+    {
+      "src": "server.js", 
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "server.js"
+    }
+  ],
+  "env": {
+    "GITHUB_TOKEN": "@github_token" 
+  },
+  "github": {
+    "silent": true,
+    "enable": true
+  }
 }

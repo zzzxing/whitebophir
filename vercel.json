@@ -1,22 +1,10 @@
 {
-  "name": "whitebophir",
-  "builds": [
-    {
-      "src": "server.js", 
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "server.js"
-    }
-  ],
-  "env": {
-    "GITHUB_TOKEN": "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" 
-  },
-  "github": {
-    "silent": true,
-    "enable": true
-  }
+   "version": 2,
+   "name": "music-album",
+   "builds": [
+      { "src": "app.js", "use": "@vercel/node" }
+   ],
+   "routes": [
+      { "src": "/(.*)", "dest": "/app.js" }
+   ]
 }
